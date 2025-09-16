@@ -6,24 +6,29 @@ import SignUp from "./SignUp";
 import Dashboard from "./Dashboard";
 import FeaturesPage from "./FeaturesPage";
 import AboutPage from "./AboutPage";
-import ContactPage from "./ContactPage"
-import Navbar from "./Navbar";
+import ContactPage from "./ContactPage";
 
 export default function App() {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/LoginPage" element={<LoginPage />} />
-        <Route path="/SignUp" element={<SignUp />} />
-        <Route path="/Dashboard" element={<Dashboard />} />
-        <Route path="/FeaturesPage" element={<FeaturesPage />} />
-        <Route path="/AboutPage" element={<AboutPage />} />
-        <Route path="/ContactPage" element={<ContactPage />} />
-        <Route path="/AboutPage" element={<AboutPage />} />
-        <Route path="/FeaturesPage" element={<FeaturesPage />} />
-        <Route path="/Navbar" element={<Navbar />} />
-      </Routes>
+      <div>
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/features" element={<FeaturesPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          {/* Legacy routes for backward compatibility */}
+          <Route path="/LoginPage" element={<LoginPage />} />
+          <Route path="/SignUp" element={<SignUp />} />
+          <Route path="/Dashboard" element={<Dashboard />} />
+          <Route path="/FeaturesPage" element={<FeaturesPage />} />
+          <Route path="/AboutPage" element={<AboutPage />} />
+          <Route path="/ContactPage" element={<ContactPage />} />
+        </Routes>
+      </div>
     </Router>
   );
 }
