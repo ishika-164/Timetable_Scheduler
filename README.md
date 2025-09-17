@@ -1,5 +1,5 @@
 # Timetable_Scheduler
-📅 SmartScheduler – Timetable & Smart Curriculum Platform
+📅 SmartScheduler – Smart classroom and timetable schedule Platform
 🚀 Overview
 
 SmartScheduler is a web-based timetable scheduling and curriculum management platform designed for higher education institutions. It helps automate and optimize class scheduling by considering real-world constraints such as:
